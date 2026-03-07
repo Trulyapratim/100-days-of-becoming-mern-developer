@@ -1,0 +1,39 @@
+A variable is a “named storage” for data. We can use variables to store goodies, visitors, and other data.
+
+To create a variable in JavaScript, use the let keyword.
+
+eg: let message;             // declaration
+    message = 'Hello World!';  // assigning the value
+
+  -> A variable should be declared once
+    eg: let message = 'Hello';
+        let message = 'world'; // this will show error
+
+
+  -> variable naming can only consists of words, $ and _.
+    and a variable name can not start with digits. 
+    eg: let 1name; //  syntax error 
+
+-> js is a character sensitive language
+as let apple;
+   let Apple; // are two different variables 
+
+-------------------------------------------------------------------------------
+There is a list of reserved words, which cannot be used as variable names because they are used by the language itself.
+
+For example: let, class, return, and function are reserved.
+
+The code below gives a syntax error:
+
+let let = 5; // can't name a variable "let", error!
+let return = 5; // also can't name it "return", error!
+
+-------------------------------------------------------------------------------
+
+--> const keyword
+To declare a constant (unchanging) variable, use const instead of let.
+
+eg: const myBirthday = '18.04.1982';
+
+myBirthday = '01.01.2001'; // error, can't reassign the constant!
+
