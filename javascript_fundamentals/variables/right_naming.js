@@ -3,5 +3,5 @@ let currentUser;
 
 
 // the solution present was and i believe it is better also.
-let outPlanetName = "Earth";
+let ourPlanetName = "Earth";
 let currentUserName = "John";

@@ -1,19 +1,19 @@
-There are 8 basic data types in JavaScript.
+JavaScript is a Dynamically typed language. Meaning their exists data types. But variables are not bound to it. 
 
-Seven primitive data types:
-1. number:-  for numbers of any kind: integer or floating-point, integers are limited by ±(2^53-1).
-2.bigint:- for integer numbers of arbitrary length.
-3.string:- for strings. A string may have zero or more characters, there’s no separate single-character type.
-4.boolean:- for true/false.
-5.null:- for unknown values – a standalone type that has a single value null.
-6.undefined:- for unassigned values – a standalone type that has a single value undefined.
-7. symbol for unique identifiers.
+eg: - let message = 'hello world'; // here it is a string
+      message = 12232;  // now it become a number and its completely fine.
 
-And one non-primitive data type:
-object for more complex data structures.
-The typeof operator allows us to see which type is stored in a variable.
+Their are 8 basic Data Types in Js : -
 
-Usually used as typeof x, but typeof(x) is also possible. typeof x is in the official documentation of JavaScript. Whereas typeof(usually contains expression), eg:- typeof(2+2); but here they contain only one argument (x). Syntactically, they allow to avoid a space between the typeof operator and its argument, and some people like it.
+1. number : for numbers,  int, float etc.
+2: bigint : for very big number and we put n at back of the number to show   it is an big int. eg: 820585852955325523534535n;
+3: string :  for strings 
+4: boolean : for "true" and "false"
+5: null :    for unknown values – a standalone type that has a single value null
+6. undefined : for unassigned variables
+7: symbol : for unique identifiers
+8: object : for complex data structures
 
-Returns a string with the name of the type, like "string".
-For null returns "object" – this is an error in the language, it’s not actually an object.
+Now let talk about an special operator : - typeof x; 
+
+this is a special operator that tell the data type of any variable and expression.
