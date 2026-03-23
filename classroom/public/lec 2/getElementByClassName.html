@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>getElementByClassName</title>
+</head>
+<style>
+  .box{
+    margin: 5px;
+  }
+</style>
+<body>
+  <div class="box red large">Box 1</div>
+  <div class="box red">Box 2</div>
+  <div class="box large">Box 3</div>
+  <div class="red">Box 5</div>
+  <div class="box red large">Box 4</div>
+  
+  <script>
+    const redLargeBoxes = document.getElementsByClassName("large box");
+    for(let i = 0; i< redLargeBoxes.length;i++){
+      redLargeBoxes[i].style.border = "2px solid black";
+      redLargeBoxes[i].style.padding = "10px";
+      redLargeBoxes[i].style.backgroundColor = "lightblue";
+      redLargeBoxes[i].style.textAlign = "center";
+    }
+  </script>
+</body>
+</html>
