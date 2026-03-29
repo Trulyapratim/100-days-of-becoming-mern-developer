@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExecutionContext</title>
+</head>
+<body>
+  <h1>Let's Try to understand the Execution Context in Js.</h1>
+  <p>We are learnig execution Context because in JavaScript everything happens inside an execution context.JavaScript is a synchronous single threaded language.</p>
+  <p>Execution context is an abstract concept that holds information about the environment within which the current code is being executed. It contains variables, functions, and the value of this keyword. There are three types of execution contexts: global, function, and eval.</p>
+  
+  <h4>let's understand the whole concept through some codes.</h4>
+  <div>
+  var n = 2; <br> 
+  function square(num){<br>
+    var ans = num * num; <br>
+    return ans;<br>
+  } <br>
+  var square2 = square(n);<br>
+  var square3 = square(4);
+  </div>
+
+  <p>In above code we can see that i have written some of the codes of javaScript. let's not go into what is meaning of each line. or let me tell you.First of all i have created a var n and assigned a value 2 to it. Then i have written a function name square with parameter (num) then written the body of function. And then i have written 2 lines at the end of the code those are called function invocation. I hope you all have been able to follow up till now. Let's try to understand the execution context.</p>
+
+  <p>So, as we have already talked about that everything in javaScript happens inside an execution Context.Whenever we write an javaScript code an Global execution context get's created.</p>
+
+  <p>Global execution context is the default or base execution context where your code starts to execute. It creates a global object (window in browsers) and a special object called 'this'. The global execution context is created when the JavaScript engine starts executing your code and it remains until the program finishes.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Memory/Variable environment</th>
+        <th>Code/Thread of Execution</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>This section gets created when we write our js code.</td>
+        <td>This is the phase in which js code start executing.</td>
+      </tr>
+      <tr>
+        <td>In creation phase : Memory space of all variables and functions gets allocated. For variable: Undefined and for function(){ ...} entire function codes get allocated.</td>
+        <td>Now in this phase it will start replacing undefined and start putting real values to the variable. And when function gets invoked a new execution context get created in thread of execution and then again this process starts. And then this new execution context gets deallocated from the memory.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Arrow function behaves like a variable in Gloabal Execution context. Means in creation phase it gets assigned with undefined instead of whole function code.</p>
+
+  <p>During this whole process a call stack also gets created. Call Stack maintains the order of execution of execution context.</p>
+</body>
+</html>
